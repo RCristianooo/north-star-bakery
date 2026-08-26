@@ -6,6 +6,7 @@
     <title>Products - North Star Bakery</title>
     <link rel="icon" type="image/x-icon" href="media/bakery-logo_c.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,54 +32,91 @@
         
         <section>
             <h2>Breads</h2>
-            <p>
-                <strong>Sourdough Loaf:</strong>
-                Crisp and chewy bread with a sour-like taste. $7
-            </p>
-            <p>
-                <strong>Signature Loaf:</strong>
-                Our signature loaf that is baked freshly as a dark crisp artisan made of whole grain. $9
-            </p>
+            <div class="product" data-product="sourdough">
+                <p>
+                    <strong>Sourdough Loaf:</strong>
+                    Crisp and chewy bread with a sour-like taste. $7
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            
+            <div class="product" data-product="signature">
+                <p>
+                    <strong>Signature Loaf:</strong>
+                    Our signature loaf that is baked freshly as a dark crisp artisan made of whole grain. $9
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
         </section>
 
         <section>
             <h2>Pastries</h2>
-            <p>
-                <strong>Croissants:</strong>
-                Crescent-shaped pastry that buttery and flaky. $4
-            </p>
-            <p>
-                <strong>Muffins:</strong>
-                Cup-shaped pastry that is soft and moist on the inside. We offer blueberry, chocolate chip, banana, and nut muffins. $3
-            </p>
-            <p>
-                <strong>Scones:</strong>
-                Crumbly and dense pastries cut into triangles. We offer plain and fresh fruit scones! $4.50
-            </p>
-            <p>
-                <strong>Cinnamon Rolls:</strong>
-                Sweet and large rolled pastries filled with cinnamon and then glazed. $6
-            </p>
+            <div class="product" data-product="croissants">
+                <p>
+                    <strong>Croissants:</strong>
+                    Crescent-shaped pastry that buttery and flaky. $4
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="muffins">
+                <p>
+                    <strong>Muffins:</strong>
+                    Cup-shaped pastry that is soft and moist on the inside. We offer blueberry, chocolate chip, banana, and nut muffins. $3
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="scones">
+                <p>
+                    <strong>Scones:</strong>
+                    Crumbly and dense pastries cut into triangles. We offer plain and fresh fruit scones! $4.50
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="cinnamon-rolls">
+                <p>
+                    <strong>Cinnamon Rolls:</strong>
+                    Sweet and large rolled pastries filled with cinnamon and then glazed. $6
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
         </section>
 
         <section>
             <h2>Cakes</h2>
-            <p>
-                <strong>Sponge Cakes:</strong>
-                Light and airy cake that is spongy on the inside. $12
-            </p>
-            <p>
-                <strong>Layer Cakes:</strong>
-                Comes with three layers of baked cake. Your choice of vanilla or chocolate. $32
-            </p>
-            <p>
-                <strong>Cupcakes:</strong>
-                Small cup-shaped cakes. Comes with frosting and sprinkles. Your choice of vanilla or chocolate. $11
-            </p>
-            <p>
-                <strong>Bundt Cakes:</strong>
-                Ring-shaped cake that has a dense and moist inside. $21
-            </p>
+            <div class="product" data-product="sponge-cakes">
+                <p>
+                    <strong>Sponge Cakes:</strong>
+                    Light and airy cake that is spongy on the inside. $12
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="layer-cakes">
+                <p>
+                    <strong>Layer Cakes:</strong>
+                    Comes with three layers of baked cake. Your choice of vanilla or chocolate. $32
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="cupcakes">
+                <p>
+                    <strong>Cupcakes:</strong>
+                    Small cup-shaped cakes. Comes with frosting and sprinkles. Your choice of vanilla or chocolate. $11
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+            <div class="product" data-product="bundt-cakes">
+                <p>
+                    <strong>Bundt Cakes:</strong>
+                    Ring-shaped cake that has a dense and moist inside. $21
+                </p>
+                <button type="button" class="favorite">Add to Favorites</button>
+            </div>
+        </section>
+        <section>
+            <h2>My Favorites</h2>
+                <ul id="favorites">
+                    <li>No favorites yet.</li>
+                </ul>
         </section>
     </main>
     <footer>

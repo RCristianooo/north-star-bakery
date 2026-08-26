@@ -6,6 +6,7 @@
     <title>Contact - North Star Bakery</title>
     <link rel="icon" type="image/x-icon" href="media/bakery-logo_c.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,12 +27,13 @@
     <main>
         <section>
             <h2>Contact and Pre-Order Requests</h2>
-            <form action="#" method="post">
+            <form id="contact-form" novalidate>
 
                 <fieldset>
                     <legend>Your Contact Information</legend>
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <small id="name-error"></small>
 
                     <br><br>
 
@@ -42,6 +44,7 @@
 
                     <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email" required>
+                    <small id="email-error"></small>
 
                     <br><br>
 
@@ -57,6 +60,7 @@
 
                     <label for="item-details">Item Details:</label>
                     <textarea name="item-details" id="item-details" rows="5" required></textarea>
+                    <small id="details-error"></small>
 
                     <br><br>
                     <label for="allergy-notes">Allergy Notes (if applicable):</label>
