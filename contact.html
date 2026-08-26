@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - North Star Bakery</title>
+    <link rel="icon" type="image/x-icon" href="media/bakery-logo_c.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <span>North Star Bakery</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Contact and Pre-Order Requests</h2>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <br><br>
+
+                    <label for="date">Pickup Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <br><br>
+
+                    <label for="type">Request Type:</label>
+                    <input type="text" id="type" name="type" required>
+
+                    <br><br>
+
+                    <label for="item-details">Item Details:</label>
+                    <textarea name="item-details" id="item-details" rows="5" required></textarea>
+
+                    <br><br>
+                    <label for="allergy-notes">Allergy Notes (if applicable):</label>
+                    <textarea name="allergy-notes" id="allergy-notes" rows="3"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Location</h2>
+            <p>365 Northern Stellar Court</p>
+            <h2>Hours of Operation</h2>
+            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+            <p>Sunday: Closed</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+</body>
+</html>
